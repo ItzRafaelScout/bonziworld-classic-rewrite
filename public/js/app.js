@@ -504,6 +504,8 @@ function bonziTalk(guid, text) {
     
     // Start talk animation
     runBonziAnimation(guid, 'talk');
+
+    speak.play(text);
     
     // Hide bubble and stop talking after a delay
     const talkTime = Math.max(2000, text.length * 100);
