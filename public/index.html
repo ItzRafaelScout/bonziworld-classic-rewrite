@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonziWORLD - EXPERIMENTAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="page_login" class="page">
+        <div id="page_login_logo"></div>
+        <div id="login_card">
+            <input id="login_name" type="text" placeholder="Name">
+            <input id="login_room" type="text" placeholder="Room ID">
+            <div id="login_go"></div>
+            <div id="login_error"></div>
+        </div>
+        <div id="login_readme">Join a room by name, or leave blank to join a public room.</div>
+        <div id="login_load">LOADING</div>
+        <div id="login_version">EXPERIMENTAL</div>
+        <div id="login_apps"></div>
+    </div>
+
+    <div id="content">
+        <canvas id="bonzi-canvas"></canvas>
+    </div>
+
+    <div id="chat_bar">
+        <table>
+            <tr>
+                <td id="chat_tray">
+                    <img src="img/desktop/tray.png">
+                </td>
+                <td id="chat_message_cont">
+                    <input id="chat_message" type="text" placeholder="Type a message...">
+                </td>
+                <td id="chat_send">
+                    SEND
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="room_info">
+        Room ID: <span id="room_id"></span><br>
+        Room Status: <span id="room_priv"></span><br>
+        <span id="room_owner" style="display: none;">You are the owner of this room.</span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
